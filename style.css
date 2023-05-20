@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+   
+    height: 100vh;
+}
+html{
+    font-size: 62.5%;
+
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h1{
+    font-size: 4rem;
+    /* text-align: center; */
+}
+p{
+    text-align: center;
+    font-size: 3.5rem;
+   
+}
+/* =======mobile===== */
+@media screen and (0<= width <=425px) {
+    body{
+        background-color:crimson;
+
+    }
+    p::after{
+        content: "Screen Size : 425px";
+       
+
+    }
+    
+
+}
+/* =====tablet====  */
+@media screen and (425px< width <=768px) {
+    body{
+        background-color:aqua;
+
+    }
+    p::after{
+        content: "Screen Size : 768px";
+       
+
+    }
+    
+
+}
+/* =====laptop====  */
+@media screen and (768px < width <=1024px) {
+    body{
+        background-color:darkgoldenrod;
+
+    }
+    p::after{
+        content: "Screen Size : 1024px";
+       
+
+    }
+    
+
+}
+/* =====large screen====  */
+@media screen and (1024px < width <=1440px) {
+    body{
+        background-color:forestgreen;
+
+    }
+    p::after{
+        content: "Screen Size : 1440px";
+       
+
+    }
+    
+
+}
+/* =====extra-large==== */
+@media  screen and (min-width : 1440px) {
+    body{
+        background-color: aqua;
+    }
+   
+    
+}
